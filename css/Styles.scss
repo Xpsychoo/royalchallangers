@@ -7,7 +7,7 @@
 @font-face {
     font-family: "Geogtqmd";
     font-display: swap;
-    src: local("Geogtqmd"), url(css/fonts/Geogtq-Md.woff) format("woff");
+    src: local("Geogtqmd"),url('https://xpsychoo.github.io/royalchallangers/css/fonts/Geogtq-Md.woff') format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -15,7 +15,7 @@
 @font-face {
     font-family: "Geogtqrg";
     font-display: swap;
-    src: local("Geogtqrg"), url(css/fonts/Geogtq-Rg.woff) format("woff");
+    src: local("Geogtqrg"),url('https://xpsychoo.github.io/royalchallangers/css/fonts/Geogtq-Rg.woff') format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -23,7 +23,7 @@
 @font-face {
     font-family: "Geogtqbd";
     font-display: swap;
-    src: local("Geogtqbd"), url(css/fonts/Geogtq-Bd.woff) format("woff");
+    src: local("Geogtqbd"),url('https://xpsychoo.github.io/royalchallangers/css/fonts/Geogtq-Bd.woff') format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -31,14 +31,14 @@
 @font-face {
     font-family: "Geogtqsb";
     font-display: swap;
-    src: local("Geogtqsb"), url(css/fonts//Geogtq-Sb.woff) format("woff");
+    src: local("Geogtqsb"),url('https://xpsychoo.github.io/royalchallangers/css/fonts//Geogtq-Sb.woff') format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "FontAwesome";
-    src: url(css/fonts//fontawesome-webfont.woff2) format("woff2");
+    src:url('https://xpsychoo.github.io/royalchallangers/css/fonts//fontawesome-webfont.woff2') format("woff2");
 }
 
 :root {
@@ -60,7 +60,7 @@ body {
     padding: 0px;
 
     .nav-wrapper {
-        background-image: url(images/backgrounds/nav-bg.png);
+        background-image:url('https://xpsychoo.github.io/royalchallangers/images/backgrounds/nav-bg.png');
         background-size: cover;
         background-repeat: no-repeat;
 
