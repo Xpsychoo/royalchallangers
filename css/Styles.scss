@@ -4,10 +4,19 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
 @font-face {
     font-family: "Geogtqmd";
     font-display: swap;
-    src: local("Geogtqmd"),url('https://xpsychoo.github.io/royalchallangers/css/fonts/Geogtq-Md.woff') format("woff");
+    src: local("Geogtqmd"), url('https://xpsychoo.github.io/royalchallangers/css/fonts/Geogtq-Md.woff') format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -15,7 +24,7 @@
 @font-face {
     font-family: "Geogtqrg";
     font-display: swap;
-    src: local("Geogtqrg"),url('https://xpsychoo.github.io/royalchallangers/css/fonts/Geogtq-Rg.woff') format("woff");
+    src: local("Geogtqrg"), url('https://xpsychoo.github.io/royalchallangers/css/fonts/Geogtq-Rg.woff') format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -23,7 +32,7 @@
 @font-face {
     font-family: "Geogtqbd";
     font-display: swap;
-    src: local("Geogtqbd"),url('https://xpsychoo.github.io/royalchallangers/css/fonts/Geogtq-Bd.woff') format("woff");
+    src: local("Geogtqbd"), url('https://xpsychoo.github.io/royalchallangers/css/fonts/Geogtq-Bd.woff') format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -31,14 +40,14 @@
 @font-face {
     font-family: "Geogtqsb";
     font-display: swap;
-    src: local("Geogtqsb"),url('https://xpsychoo.github.io/royalchallangers/css/fonts//Geogtq-Sb.woff') format("woff");
+    src: local("Geogtqsb"), url('https://xpsychoo.github.io/royalchallangers/css/fonts//Geogtq-Sb.woff') format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "FontAwesome";
-    src:url('https://xpsychoo.github.io/royalchallangers/css/fonts//fontawesome-webfont.woff2') format("woff2");
+    src: url('https://xpsychoo.github.io/royalchallangers/css/fonts//fontawesome-webfont.woff2') format("woff2");
 }
 
 :root {
@@ -60,7 +69,7 @@ body {
     padding: 0px;
 
     .nav-wrapper {
-        background-image:url('https://xpsychoo.github.io/royalchallangers/images/backgrounds/nav-bg.png');
+        background-image: url('https://xpsychoo.github.io/royalchallangers/images/backgrounds/nav-bg.png');
         background-size: cover;
         background-repeat: no-repeat;
 
@@ -322,6 +331,616 @@ body {
         }
     }
 
+    .content-wrapper {
+        padding: 1rem;
+
+        .slider-wrapper {
+            min-height: 38.55rem;
+            max-height: 38.55rem;
+            overflow: hidden;
+
+            // .owl-slide {
+            //     overflow: hidden;
+            // }
+            .owl-carousel {
+                width: 100%;
+                height: 100%;
+
+                /*  overflow: hidden;
+ */
+                .owl-dots {
+                    background: rgba(9, 21, 16, 0.74);
+                    position: relative;
+                    position: absolute;
+                    bottom: 10%;
+                    right: 0%;
+                    margin-top: -2px;
+                    transform: translate(-50%, -50%);
+                    z-index: 99999999;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 5px;
+
+                    .owl-dot {
+                        border-radius: 50%;
+
+                        &.active {
+                            span {
+
+                                background-color: #d80c0b;
+                            }
+                        }
+
+                        span {
+                            width: 12px;
+                            height: 12px;
+                            margin: 11px 6px;
+                        }
+                    }
+
+                }
+            }
+
+            .owl--text {
+                position: absolute;
+                bottom: 20em;
+                // left: 2em;
+                // width: 20em;
+                // height: 8em;
+                padding: 1em 2em 1em 1em;
+                // background: rgba(255, 255, 255, .5);
+                border-radius: 4px;
+
+                mark {
+                    color: #fff;
+                    background-color: #d80c0b;
+                    text-decoration: none;
+                    padding: 0.15rem 0.8rem 0.15rem 0.6rem;
+                    font-size: 41px;
+                    font-family: "Geogtqbd";
+                    text-transform: uppercase;
+                    padding-inline-end: 0.8rem;
+                    line-height: 1.4;
+                }
+
+                .field-content {
+                    width: auto;
+                    float: left;
+                    left: 2rem;
+                    color: #fff;
+                    background: #b89913;
+                    text-decoration: none;
+                    padding: 0.5rem 0.5rem;
+                    font-size: 1rem;
+                    position: absolute;
+                    // bottom: 3rem;
+                    margin-top: 12px;
+                }
+            }
+
+            /* .owl-buttons {
+                display: none;
+            } */
+        }
+
+        .layout__region--second {
+            background: #2c2424;
+            min-height: 38.55rem;
+            max-height: 38.55rem;
+            overflow: hidden;
+            margin-left: 0.75rem;
+
+            .bas-scr-det {
+                position: relative;
+
+                .live-mtch-cmtblk {
+                    text-align: center;
+
+                    .live-mtch-dt {
+                        color: #b4a77c;
+                        font-size: 1rem;
+                        margin-top: 1.1rem;
+
+                    }
+
+                    .live-mtch-cmt.pst-match-cmt {
+                        font-size: 1.1rem;
+                    }
+
+                    .live-mtch-cmt {
+                        color: #d1be7b;
+                        font-size: 1.5rem;
+                        margin: 0 0.5rem;
+                    }
+                }
+
+                .pst-blk-score {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    width: 100%;
+
+                    .pst-blk-scrdet {
+                        display: flex;
+                        width: 155px;
+                        justify-content: space-around;
+
+                        img {
+                            border-style: none;
+                            max-width: 100%;
+                        }
+
+                        #clockdiv {
+                            float: left;
+
+                            .pst-blk-dhms {
+                                margin-top: 10px;
+
+                                .days {
+                                    margin-left: 8px;
+                                    font-size: 1rem;
+                                    padding: 1rem 2rem;
+                                    height: 3rem;
+                                    white-space: pre;
+                                }
+
+                                .smalltext {
+                                    color: #ccba70;
+                                    font-family: "Geogtqmd";
+                                    font-size: 0.8rem;
+                                    font-weight: 700;
+                                    margin-top: 0.2rem;
+                                    text-align: center;
+                                }
+
+                                p {
+                                    background: #353535;
+                                    border: 0.05rem solid rgba(255, 255, 255, 0.25);
+                                    height: 3.8rem;
+                                    width: 4.8rem;
+                                    padding: 1rem 0.55rem;
+                                    margin: 0 0.2rem;
+                                    display: flex;
+                                    align-items: center;
+                                    color: #fff;
+                                    font-weight: bold;
+                                    font-size: 1.55rem;
+                                    font-family: "Geogtqsb";
+                                    justify-content: center;
+                                    background-image: linear-gradient(to right top, #333333, #323232, #313131, #303030, #2f2f2f, #2c2d2d, #292b2c, #262929, #212526, #1d2122, #191d1f, #15191c);
+                                }
+                            }
+                        }
+
+                        #clockdiv {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+
+                    .split {
+                        padding: 0 5px;
+
+                        .big {
+                            font-size: 1rem;
+                            color: #ccba70;
+
+                            .small {
+                                font-size: 0.5rem;
+                            }
+                        }
+                    }
+                }
+
+                .mtch-dpth-det {
+                    margin: 1rem;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    position: relative;
+                    top: 2.5rem;
+
+                    a {
+                        color: #b4a77c;
+                        font-size: 0.8rem;
+                    }
+
+                }
+
+                .pur-tck-blk {
+                    background: #f30f0e;
+                    font-size: 1.25rem;
+                    font-weight: 700;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    position: relative;
+                    top: 2.5rem;
+
+                    span {
+                        display: flex;
+                        padding: 1rem;
+                    }
+
+                    .buy-tck-spn {
+                        border-right: 1px solid #c72121;
+                    }
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+
+            .hm-adsblk {
+                margin-top: 3rem;
+
+                h4,
+                h3 {
+                    margin-bottom: 0;
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-family: "Geogtqmd";
+                    font-size: 1.75rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                h3 {
+                    margin-top: 0;
+                    text-transform: uppercase;
+                    color: #ccba70;
+                    font-family: "Geogtqsb";
+                }
+
+                ul {
+                    max-width: 70%;
+                    margin: 0 auto;
+
+                    li:first-child {
+                        margin-right: 0.5rem;
+                    }
+
+                    li {
+                        list-style: none;
+                        float: left;
+                        width: 48%;
+                        padding-bottom: 1rem;
+
+                        img {
+                            border-style: none;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        .second-section {
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            // padding-right: 0.35rem;
+            // padding-left: 0.35rem;
+
+
+            img {
+                transition: transform 2.5s ease;
+                height: 100%;
+                width: 100%;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+
+            .tag {
+                a {
+                    background: #d80c0b;
+                    color: #fff;
+                    font-size: 1rem;
+                    position: absolute;
+                    top: 0;
+                    z-index: 1;
+                    padding: 0.3rem 0.7rem;
+                    left: 0;
+                    text-transform: uppercase;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                // padding: 0.35rem 1rem;
+                font-size: 2.55rem;
+                font-family: "Geogtqbd"
+            }
+
+            .field-date {
+                flex: none;
+                background: #e7c641;
+                color: #fff;
+                padding: 0.25rem 0.55rem;
+                width: 2.8rem;
+                margin-right: 1rem;
+                font-size: 1.05rem;
+                word-break: break-word;
+                height: 2.8rem;
+                text-align: center;
+
+                .fld-dte {
+                    font-size: 1.35rem;
+                    line-height: 0;
+                    font-family: "Geogtqrg";
+                }
+
+                .fld-mth {
+                    font-family: "Geogtqrg";
+                    font-size: 0.85rem;
+                    position: relative;
+                    top: -0.35rem;
+                }
+            }
+
+            .feature-cntwrap {
+                width: 80%;
+                float: right;
+
+                a {
+                    text-decoration: none;
+                    color: #101612;
+                    font-size: 1.35rem;
+                    position: relative;
+                    left: 0;
+                    margin: 0;
+                    width: 100%;
+                    padding-left: 0;
+                    text-align: left;
+                    font-family: "Geogtqsb";
+                    text-transform: capitalize;
+                }
+
+                .body {
+                    font-family: "Geogtqmd";
+                    font-size: 1rem;
+                    font-weight: normal;
+                    line-height: 1.43;
+                    color: #58585b;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 6;
+                    -webkit-box-orient: vertical;
+                }
+            }
+
+
+            h2 {
+                position: absolute;
+                bottom: 0.35rem;
+                width: 80%;
+                left: 1rem;
+            }
+
+            mark {
+                // position: absolute;
+                // bottom: 2rem;
+                // left: 1rem;
+                // width: 100%;  
+                text-transform: uppercase;
+                background: #fff;
+                margin-bottom: 0.3rem;
+                line-height: 1.48;
+                padding: 0.15rem 0.8rem 0.15rem 0.6rem;
+                text-decoration: none;
+                font-size: 2.24rem;
+            }
+        }
+
+        .news-3 {
+            .field-date {
+                position: absolute;
+                bottom: 0px;
+            }
+
+            img {
+                width: 100%;
+                min-height: 10rem;
+                max-height: 10rem;
+                overflow: hidden;
+                object-fit: cover;
+            }
+        }
+
+        .hm-shopsec {
+            padding: 0 5rem;
+            display: flex;
+
+            .prod-inr {
+                box-shadow: unset;
+                background: transparent;
+                padding: 5px 0 0 0;
+                text-align: center;
+                background: #ffffff;
+                padding: .5rem 2rem;
+                margin-bottom: 1rem;
+                min-height: 17.2rem;
+                box-shadow: inset 0 0 0 2px #f9f9f9;
+                // background: #fbfbfb;
+                border: 1px solid #d3d3d3;
+
+                .prod-img {
+                    img {
+                        min-height: 10rem;
+                        max-height: 10rem;
+                        object-fit: cover;
+                        background-position: 0 0;
+                        object-position: bottom;
+                        width: auto;
+                        margin-bottom: 0.75rem;
+                    }
+                }
+
+                .prod-name {
+                    color: #101612;
+                    text-transform: uppercase;
+                    min-height: 2.5rem;
+                }
+
+                .price {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #ccc;
+                    min-width: 10.15rem;
+                    max-width: 10.15rem;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    overflow: hidden;
+
+
+                    .dtl {
+                        transform: translateX(-10px) !important;
+                        box-sizing: border-box;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        max-width: 100%;
+                        overflow: hidden;
+                        position: relative;
+                        padding: 0 0 0 1.5rem;
+                        min-height: 2.6rem;
+                        max-height: 2.6rem;
+
+                        span {
+                            padding: 0 0.5rem;
+                            color: #101612;
+                            font-family: "Geogtqrg";
+                            font-size: 1.25rem;
+
+                            &::before {
+                                background: url('https://xpsychoo.github.io/royalchallangers/images/ruppee_symbol.png');
+                                content: " ";
+                                top: 0;
+                                left: 0.3rem;
+                                right: 0rem;
+                                object-fit: cover;
+                                background-position: left;
+                                position: absolute;
+                                background-repeat: no-repeat;
+                                height: 100%;
+                                background-size: 0.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .hm-shopleft {
+                width: 35%;
+                float: left;
+                position: relative;
+                background-position: -35px 50px;
+                min-height: 625px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                margin: 120px;
+            }
+        }
+
+        .app-section {
+            padding: 2rem 7rem;
+            text-transform: uppercase;
+
+            .banner-img {
+                max-width: 100%;
+                min-width: 50%;
+            }
+
+            .body {
+                padding-left: 7rem;
+
+                h4 {
+                    font-family: "Geogtqrg";
+                    color: #101612;
+                    text-transform: uppercase;
+                    font-size: 3rem;
+                    margin-bottom: 0;
+                }
+
+                span {
+                    font-family: "Geogtqbd";
+                    color: #e00c0b;
+                    font-size: 3.35rem;
+                    text-transform: uppercase;
+                }
+
+                .stay_list {
+                    padding-left: 0;
+                    display: flex;
+                    text-transform: uppercase;
+                    flex-wrap: wrap;
+
+                    .app-plat {
+                        li {
+                            list-style: none;
+                        }
+
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    li {
+                        list-style: none;
+                        display: flex;
+                        padding-right: 3rem;
+                        align-items: center;
+
+                        .inner-group-left:first-child {
+                            width: 2rem;
+                            height: 2.7rem;
+                            color: #fff;
+                            background: #666666;
+                            text-align: center;
+                            padding-top: 0.6rem;
+                            margin-right: 1rem;
+                            font-size: 1.15rem;
+                        }
+
+                        .inner-group-left:last-child {
+                            font-weight: bold;
+                            color: #2c2c2c;
+                            font-family: "Geogtqsb";
+                            font-size: 1.05rem;
+                            position: relative;
+                            top: 0.25rem;
+
+                            span {
+                                color: #666666;
+                                font-weight: normal;
+                                font-family: "Geogtqrg";
+                                display: block;
+                                font-size: 0.9rem;
+                                line-height: 0.8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .banner-2 {
+        margin-top: 50px;
+        text-align: center;
+    }
+
     .footer-wrapper {
         background-color: var(--black-color);
 
@@ -405,7 +1024,7 @@ body {
                         align-items: center;
                         justify-content: flex-end;
 
-                        img{
+                        img {
                             margin-left: 10px;
                         }
                     }
@@ -414,6 +1033,7 @@ body {
 
         }
     }
+
 
 }
 
@@ -589,6 +1209,28 @@ body {
             }
         }
 
+        .content-wrapper {
+            padding: 0px ;
+            max-width: 100%;
+            overflow: hidden;
+            .layout__region--second{
+                margin-left: 0px;
+            }
+            .hm-shopsec{
+                padding: 10px;
+            }
+            .slider-wrapper {
+                min-height: auto;
+            }
+            .app-section{
+                padding: 10px;
+
+                .body{
+                    padding-left: 0px;
+                }
+            }
+        }
+
         .footer-wrapper .footer {
             width: 98%;
 
@@ -627,7 +1269,7 @@ body {
                         height: 20px;
                         font-size: 12px;
                     }
-                   
+
                 }
 
                 .foot-store-btn {
@@ -637,7 +1279,7 @@ body {
                         font-size: 10px;
                         max-width: 6rem;
                     }
-                    
+
                 }
             }
         }
